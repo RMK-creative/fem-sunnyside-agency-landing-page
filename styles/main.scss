@@ -30,15 +30,53 @@ body {
   line-height: 1.5;
   font-size: 18px;
 
-  background-color: var(--color-photography-blue);
+  background-color: var(--color-white);
 }
 
 img {
-  width: 100%;
   display: block;
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.header__logo-container {
+  position: absolute;
+}
+
+.logo {
+  width: 7.7rem;
+}
+
+.header {
+  height: 95vh;
+  background-image: url(/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__heading {
+  font-size: 2.5rem;
+  font-family: var(--font-family-fraunces);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 6.25px;
+  color: var(--color-white);
+  text-align: center;
+
+  position: absolute;
+  top: 30%;
 }
