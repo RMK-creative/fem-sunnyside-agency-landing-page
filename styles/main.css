@@ -1,3 +1,18 @@
+:root {
+  --color-soft-red: #fe7867;
+  --color-yellow: #fad400;
+  --color-graphic-design-cyan: #25564b;
+  --color-photography-blue: #19536b;
+  --color-footer-cyan: #458c7e;
+  --color-dark-desaturated-blue: #23303e;
+  --color-very-dark-grayish-blue: #5a636c;
+  --color-very-dark-grayish-blue: #818498;
+  --color-grayish-blue: #a7abae;
+  --color-white: white;
+  --font-family-barlow: "Barlow", sans serif;
+  --font-family-fraunces: "Fraunces", serif;
+}
+
 *,
 *::before,
 *::after,
@@ -11,7 +26,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
+  background-color: var(--color-photography-blue);
 }
 
 img {
