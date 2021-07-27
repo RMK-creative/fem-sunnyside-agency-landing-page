@@ -2,11 +2,12 @@
   --color-soft-red: #fe7867;
   --color-yellow: #fad400;
   --color-graphic-design-cyan: #25564b;
+  --color-lighter-cyan: #458c7e;
   --color-photography-blue: #19536b;
-  --color-footer-cyan: #458c7e;
+  --color-footer-cyan: #91d4c7;
   --color-dark-desaturated-blue: #23303e;
   --color-very-dark-grayish-blue: #5a636c;
-  --color-very-dark-grayish-blue: #818498;
+  --color-dark-grayish-blue: #818498;
   --color-grayish-blue: #a7abae;
   --color-white: white;
   --font-family-barlow: "Barlow", sans serif;
@@ -44,8 +45,20 @@ a {
   color: inherit;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-fraunces);
+}
+
+p,
+.footer__nav-item {
+  font: var(--font-family-barlow);
+}
+
 .header {
   position: relative;
+  padding: 1.5rem;
   height: 95vh;
   background-image: url(/images/mobile/image-header.jpg);
   background-size: cover;
@@ -84,4 +97,180 @@ a {
 .header__arrow {
   margin-top: 3rem;
   height: 7.5rem;
+}
+
+.main__cta-transform {
+  width: 100%;
+}
+
+.main__cta {
+  text-align: center;
+}
+
+.main__cta-header {
+  font-weight: 900;
+  color: var(--color-dark-desaturated-blue);
+  margin-top: 4rem;
+  padding: 0 3rem;
+}
+
+.main__cta-copy {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+  color: var(--color-very-dark-grayish-blue);
+}
+
+.main__cta-btn {
+  text-transform: uppercase;
+  font-family: var(--font-family-fraunces);
+  font-weight: 900;
+  font-size: 0.9375rem;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.main__cta-btn::after {
+  content: "";
+  height: 0.625rem;
+  width: 8.562rem;
+  border-radius: 1rem;
+  position: absolute;
+  transform: translate(-8.1rem, 1rem);
+  z-index: -1;
+  background-color: var(--color-yellow);
+  opacity: 0.3;
+}
+
+#learn-more__stand-out::after {
+  background-color: var(--color-soft-red);
+  opacity: 0.4;
+}
+
+.main__cta-stand-out {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#main__cta-graphic {
+  margin-top: 4rem;
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vw;
+  display: flex;
+  flex-direction: column;
+  place-content: flex-end;
+}
+
+#main__cta-photography {
+  margin-top: 0;
+  background-image: url(/images/mobile/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vw;
+  display: flex;
+  flex-direction: column;
+  place-content: flex-end;
+}
+
+#main__cta-photography p,
+#main__cta-graphic p {
+  font-size: 1rem;
+  color: var(--color-dark-desaturated-blue);
+}
+
+.testimonials {
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonials__header {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-grayish-blue);
+}
+
+.testimonials__card {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__img {
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.testimonials__copy {
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  line-height: 1.7;
+  letter-spacing: 0.13px;
+}
+
+.testimonials__name {
+  font-size: 1.125rem;
+  margin-top: 2rem;
+}
+
+.testimonials__title {
+  font-size: 0.875rem;
+}
+
+.footer {
+  margin-top: 5.375rem;
+  background-color: var(--color-footer-cyan);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__img-stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__img {
+  height: 11.75rem;
+}
+
+.footer__logo-container {
+  margin-top: 3rem;
+}
+
+#footer__logo {
+  fill: var(--color-lighter-cyan);
+}
+
+.footer__nav-list,
+.footer__socials-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footer__nav-item {
+  margin: 2.5rem 2rem 0;
+  font-family: var(--font-family-barlow);
+  color: var(--color-lighter-cyan);
+}
+
+.footer__socials-list {
+  margin-top: 5.5rem;
+}
+
+.footer__socials-icon {
+  margin: 0 1rem;
+}
+
+.attribution {
+  font-size: 0.875rem;
+  margin-top: 4rem;
+  color: var(--color-lighter-cyan);
 }
