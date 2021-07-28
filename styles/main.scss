@@ -74,6 +74,8 @@ p,
 
 .header__logo-container {
   position: absolute;
+  top: 2.2rem;
+  left: 1rem;
 }
 
 .logo {
@@ -81,9 +83,10 @@ p,
 }
 
 .navigation {
-  position: relative;
   width: 100%;
   position: absolute;
+  top: 2rem;
+  left: -1rem;
 }
 
 .navigation__toggle {
@@ -164,8 +167,8 @@ p,
   display: grid;
   place-content: center;
   position: relative;
-  top: 7rem;
-  left: 1.5rem;
+  top: 5rem;
+  left: 2.5rem;
   animation: fadein 0.7s;
 }
 
