@@ -76,6 +76,65 @@ p,
   width: 7.7rem;
 }
 
+.navigation {
+  background-color: turquoise;
+}
+
+.navigation__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navigation__hamburger {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: transform 200ms ease;
+}
+
+.navigation__hamburger::before,
+.navigation__hamburger::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+  transition: top 200ms ease 0.12s, transform 200ms ease;
+}
+
+.navigation__hamburger::before {
+  top: -6px;
+}
+
+.navigation__hamburger::after {
+  top: 6px;
+}
+
+.navigation__toggle.open .navigation__hamburger {
+  transform: rotate(45deg);
+  transition: transform 200ms 0.12s ease;
+}
+
+.navigation__toggle.open .navigation__hamburger::before {
+  top: 0;
+  transition: top 200ms ease;
+}
+
+.navigation__toggle.open .navigation__hamburger::after {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top 200ms ease, transform 200ms ease 0.12s;
+}
+
 .header__text-container {
   display: flex;
   flex-direction: column;
