@@ -28,6 +28,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-size: 18px;
+  display: grid;
+  place-content: center;
   background-color: var(--color-white);
 }
 
@@ -145,8 +147,7 @@ p,
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 30%;
+  position: relative;
 }
 
 .navigation__li {
@@ -209,6 +210,13 @@ p,
 .header__arrow {
   margin-top: 3rem;
   height: 7.5rem;
+  animation: bounce 0.5s infinite alternate ease-in;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(0.5rem);
+  }
 }
 
 .main__cta-transform {
@@ -348,7 +356,9 @@ p,
 }
 
 .footer__img {
-  height: 11.75rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__logo-container {
