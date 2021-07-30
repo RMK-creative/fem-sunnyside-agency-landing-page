@@ -476,7 +476,10 @@ p,
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // display: flex;
-    // flex-direction: row;
+  }
+
+  .footer__img-stack {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
