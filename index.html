@@ -72,15 +72,21 @@
       <main class="main">
         <section class="cta">
           <div class="cta__stack stack-top">
-            <div class="cta__img">
-              <img
-                class="cta__transform"
-                src="./images/mobile/image-transform.jpg"
-                alt="a white egg with bright yellow background"
-              />
+            <div class="cta__img" id="cta--order2">
+              <picture>
+                <source
+                  srcset="images/desktop/image-transform.jpg"
+                  media="(min-width: 650px)"
+                />
+                <img
+                  class="cta__transform"
+                  src="./images/mobile/image-transform.jpg"
+                  alt="a white egg with bright yellow background"
+                />
+              </picture>
             </div>
 
-            <div class="cta">
+            <div class="cta" id="cta--order1">
               <h2 class="cta__header">Transform your brand</h2>
               <p class="cta__copy">
                 We are a full-service creative agency specializing in helping
@@ -139,53 +145,55 @@
           <header>
             <h2 class="testimonials__header">Client testimonials</h2>
           </header>
-          <blockquote class="testimonials__card">
-            <div>
-              <img
-                class="testimonials__img"
-                src="./images/image-emily.jpg"
-                alt="Emily"
-              />
-            </div>
-            <p class="testimonials__copy">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <h3 class="testimonials__name">Emily R.</h3>
-            <p class="testimonials__title">Marketing Director</p>
-          </blockquote>
+          <div class="testimonials__cards-wrapper">
+            <blockquote class="testimonials__card">
+              <div>
+                <img
+                  class="testimonials__img"
+                  src="./images/image-emily.jpg"
+                  alt="Emily"
+                />
+              </div>
+              <p class="testimonials__copy">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <h3 class="testimonials__name">Emily R.</h3>
+              <p class="testimonials__title">Marketing Director</p>
+            </blockquote>
 
-          <blockquote class="testimonials__card">
-            <div>
-              <img
-                class="testimonials__img"
-                src="./images/image-thomas.jpg"
-                alt="Thomas"
-              />
-            </div>
-            <p class="testimonials__copy">
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <h3 class="testimonials__name">Thomas S.</h3>
-            <p class="testimonials__title">Chief Operating Officer</p>
-          </blockquote>
+            <blockquote class="testimonials__card">
+              <div>
+                <img
+                  class="testimonials__img"
+                  src="./images/image-thomas.jpg"
+                  alt="Thomas"
+                />
+              </div>
+              <p class="testimonials__copy">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <h3 class="testimonials__name">Thomas S.</h3>
+              <p class="testimonials__title">Chief Operating Officer</p>
+            </blockquote>
 
-          <blockquote class="testimonials__card">
-            <div>
-              <img
-                class="testimonials__img"
-                src="./images/image-jennie.jpg"
-                alt="Jennie"
-              />
-            </div>
-            <p class="testimonials__copy">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <h3 class="testimonials__name">Jennie F.</h3>
-            <p class="testimonials__title">Business Owner</p>
-          </blockquote>
+            <blockquote class="testimonials__card">
+              <div>
+                <img
+                  class="testimonials__img"
+                  src="./images/image-jennie.jpg"
+                  alt="Jennie"
+                />
+              </div>
+              <p class="testimonials__copy">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <h3 class="testimonials__name">Jennie F.</h3>
+              <p class="testimonials__title">Business Owner</p>
+            </blockquote>
+          </div>
         </section>
       </main>
 
