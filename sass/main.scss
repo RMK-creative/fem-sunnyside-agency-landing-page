@@ -235,6 +235,10 @@ p,
 
 .cta {
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta__header {
@@ -248,7 +252,6 @@ p,
   padding: 0 2rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
-  max-width: 22rem;
 
   font-size: 1.125rem;
   color: var(--color-very-dark-grayish-blue);
@@ -287,8 +290,8 @@ p,
   width: 100%;
 }
 
-#cta__photography,
-#cta__graphic {
+.cta__photography,
+.cta__graphic {
   background-repeat: no-repeat;
   background-size: cover;
   height: 170vw;
@@ -299,18 +302,18 @@ p,
   align-items: center;
 }
 
-#cta__graphic {
+.cta__graphic {
   margin-top: 4rem;
   background-image: url(/images/mobile/image-graphic-design.jpg);
 }
 
-#cta__photography {
+.cta__photography {
   margin-top: 0;
   background-image: url(/images/mobile/image-photography.jpg);
 }
 
-#cta__photography p,
-#cta__graphic p {
+.cta__photography p,
+.cta__graphic p {
   font-size: 1rem;
   color: var(--color-dark-desaturated-blue);
 }
@@ -336,6 +339,7 @@ p,
 }
 
 .testimonials__img {
+  width: 4.6875rem;
   border-radius: 50%;
 }
 
