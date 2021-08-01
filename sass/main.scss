@@ -430,6 +430,36 @@ p,
 }
 
 @media only screen and (min-width: 650px) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__nav {
+    padding: 2rem;
+    border: 2px dotted black;
+  }
+
+  // .navigation__li {
+  //   display: flex;
+  //   padding: 2rem;
+  //   border: 2px solid black;
+  //   width: 100%;
+  // }
+
+  .header {
+    background-image: url(/images/desktop/image-header.jpg);
+    padding: 9rem 0 16rem;
+  }
+
+  .header__heading {
+    max-width: 100%;
+    font-size: 3.5rem;
+  }
+
+  .header__arrow {
+    width: 5%;
+  }
+
   .cta__photography,
   .cta__graphic {
     height: 110vw;
@@ -439,6 +469,18 @@ p,
 @media only screen and (min-width: 750px) {
   .cta__header {
     margin: 0;
+  }
+
+  .cta__photography-text-wrap {
+    max-width: 30rem;
+  }
+
+  .cta__graphic-text-wrap {
+    max-width: 40rem;
+  }
+
+  .cta__copy {
+    padding: 0 6rem;
   }
 
   .cta__stack {
@@ -465,6 +507,11 @@ p,
 
   .cta__graphic {
     background-image: url(/images/desktop/image-graphic-design.jpg);
+  }
+
+  .cta__photography,
+  .cta__graphic {
+    height: 43vw;
   }
 
   .testimonials__card {
