@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -24,13 +23,34 @@
   <body>
     <div class="content-wrapper">
       <header class="header">
-        <div class="header__logo-container">
-          <img
-            class="logo"
-            src="./images/logo.svg"
-            alt="sunnyside agency logo"
-          />
-        </div>
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <img
+              class="logo"
+              src="./images/logo.svg"
+              alt="Sunnyside agency logo"
+            />
+          </div>
+          <button class="navbar__toggle">
+            <span class="navbar__hamburger"></span>
+          </button>
+          <div class="navbar-links">
+            <ul class="navbar__modal">
+              <li class="navbar__item">
+                <a href="/" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/" class="navbar__link">Services</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/" class="navbar__link">Projects</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/" class="navbar__link btn-nav btn-contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <div class="header__text-container">
           <h1 class="header__heading">We are creatives</h1>
@@ -39,33 +59,6 @@
             src="./images/icon-arrow-down.svg"
             alt=""
           />
-        </div>
-
-        <div class="navigation">
-          <nav class="navigation__nav">
-            <button class="navigation__toggle">
-              <span class="navigation__hamburger"></span>
-            </button>
-
-            <div class="navigation__modal hidden">
-              <ul class="navigation__li">
-                <li class="navigation__item">
-                  <a href="/" class="navigation__link">About</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="/" class="navigation__link">Services</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="/" class="navigation__link">Projects</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="/" class="navigation__link btn-nav btn-contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
       </header>
 
@@ -123,20 +116,24 @@
 
           <div class="cta__stack stack-bottom">
             <div class="cta__graphic">
-              <h2 class="cta__header">Graphic design</h2>
-              <p class="cta__copy">
-                Great design makes you memorable. We deliver artwork that
-                underscores your brand message and captures potential clients’
-                attention.
-              </p>
+              <div class="cta__graphic-text-wrap">
+                <h2 class="cta__header">Graphic design</h2>
+                <p class="cta__copy">
+                  Great design makes you memorable. We deliver artwork that
+                  underscores your brand message and captures potential clients’
+                  attention.
+                </p>
+              </div>
             </div>
 
             <div class="cta__photography">
-              <h2 class="cta__header">Photography</h2>
-              <p class="cta__copy">
-                Increase your credibility by getting the most stunning,
-                high-quality photos that improve your business image.
-              </p>
+              <div class="cta__photography-text-wrap">
+                <h2 class="cta__header">Photography</h2>
+                <p class="cta__copy">
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
+              </div>
             </div>
           </div>
         </section>

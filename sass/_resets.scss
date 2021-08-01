@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+
+  background-color: var(--color-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-fraunces);
+}
+
+p,
+.footer__nav-item {
+  font: var(--font-family-barlow);
+}
