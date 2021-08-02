@@ -108,7 +108,8 @@ a.menu.hide {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--color-bg-blue); }
+  background-color: var(--color-bg-blue);
+  padding-bottom: 7rem; }
 
 .header__logo-container {
   position: absolute;
@@ -318,10 +319,12 @@ a.menu.hide {
   .toggle-box {
     display: none; }
   .header {
-    background-image: url(/images/desktop/image-header.jpg); }
+    background-image: url(/images/desktop/image-header.jpg);
+    padding-bottom: 15rem; }
   .header__heading {
     max-width: 100%;
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    margin-top: 6.6rem; }
   .header__arrow {
     width: 5%; }
   .cta__photography,

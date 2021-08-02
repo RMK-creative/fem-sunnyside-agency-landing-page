@@ -67,12 +67,12 @@ a.menu.hide {
 
 .header {
   position: relative;
-  // padding: 8rem;
   background-image: url(/images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-bg-blue);
+  padding-bottom: 7rem;
 
   // display: grid;
   // place-content: center;
@@ -345,12 +345,13 @@ a.menu.hide {
   // }
   .header {
     background-image: url(/images/desktop/image-header.jpg);
-    // padding: 9rem 0 16rem;
+    padding-bottom: 15rem;
   }
 
   .header__heading {
     max-width: 100%;
     font-size: 3.5rem;
+    margin-top: 6.6rem;
   }
 
   .header__arrow {
