@@ -7,28 +7,48 @@
   overflow: hidden;
 }
 
-.navbar__modal {
+// .navbar__modal li {
+//   // display: none;
+// }
+
+.navbar__modal.active {
+  display: flex;
+}
+
+.navbar-links {
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-white);
+  clip-path: polygon(93% 9%, 100% 0, 100% 100%, 0 100%, 0 9%);
   font-family: var(--font-family-barlow);
 
-  clip-path: polygon(93% 9%, 100% 0, 100% 100%, 0 100%, 0 9%);
-  background-color: var(--color-white);
   width: 90vw;
   padding: 3rem;
   text-align: center;
-  display: flex;
+  // display: none;
   flex-direction: column;
   align-items: center;
   position: relative;
   top: 3rem;
   left: -8rem;
   animation: fadein 0.7s;
-
-  z-index: 5;
 }
 
-.navbar-links.active {
-  display: flex;
-}
+// .navbar__modal {
+//   // width: 90vw;
+//   // padding: 3rem;
+//   // text-align: center;
+//   // display: none;
+//   // flex-direction: column;
+//   // align-items: center;
+//   // position: relative;
+//   // top: 3rem;
+//   // left: -8rem;
+//   // animation: fadein 0.7s;
+
+//   // z-index: 5;
+// }
 
 .navbar__toggle {
   position: absolute;
@@ -114,6 +134,21 @@
   margin-top: 2rem;
 }
 
+.btn-contact {
+  display: block;
+  max-width: 12rem;
+  font-size: 0.9375rem;
+  color: var(--color-dark-desaturated-blue);
+  font-family: var(--font-family-fraunces);
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  background-color: var(--color-yellow);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+
+  margin-bottom: 3rem;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -124,21 +159,24 @@
 }
 
 @media only screen and (min-width: 650px) {
-  .navbar {
-    justify-content: space-between;
-    align-items: center;
-  }
+  // .navbar {
+  //   // justify-content: space-between;
+  //   // align-items: center;
+  // }
 
-  .navbar__modal {
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
-    position: relative;
-    top: 0rem;
-    left: 0rem;
-    padding: 0;
-    width: 100%;
-  }
+  // .navbar__modal {
+  //   // display: flex;
+  //   // flex-direction: row;
+  //   // align-items: center;
+  //   // flex-direction: row;
+  //   // align-items: center;
+  //   // background-color: transparent;
+  //   // position: relative;
+  //   // top: 0rem;
+  //   // left: 0rem;
+  //   // padding: 0;
+  //   // width: 100%;
+  // }
 
   .navbar__item {
     margin: 1rem;
