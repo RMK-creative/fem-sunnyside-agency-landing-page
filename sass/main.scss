@@ -40,6 +40,7 @@
 
 .btn-contact {
   display: block;
+  max-width: 12rem;
   font-size: 0.9375rem;
   color: var(--color-dark-desaturated-blue);
   font-family: var(--font-family-fraunces);
@@ -48,6 +49,8 @@
   background-color: var(--color-yellow);
   padding: 1rem 2rem;
   border-radius: 2rem;
+
+  margin-bottom: 3rem;
 }
 
 .header__heading {
@@ -273,6 +276,9 @@
 }
 
 @media only screen and (min-width: 650px) {
+  .btn-contact {
+    margin-bottom: 0;
+  }
   .header {
     background-image: url(/images/desktop/image-header.jpg);
     padding: 9rem 0 16rem;

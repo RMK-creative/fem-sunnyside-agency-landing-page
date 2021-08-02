@@ -3,6 +3,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+
+  overflow: hidden;
 }
 
 .navbar__modal {
@@ -10,23 +12,18 @@
 
   clip-path: polygon(93% 9%, 100% 0, 100% 100%, 0 100%, 0 9%);
   background-color: var(--color-white);
-  width: 90%;
-  padding: 3rem 0;
+  width: 90vw;
+  padding: 3rem;
   text-align: center;
   display: flex;
-  // display: grid;
-  // place-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   top: 3rem;
-  left: 2.2rem;
+  left: -8rem;
   animation: fadein 0.7s;
 
   z-index: 5;
-}
-
-.navbar__links {
-  display: block;
-  padding: 1rem;
 }
 
 .navbar-links.active {
@@ -49,13 +46,6 @@
   width: 100%;
   background-color: #fff;
 }
-
-// .navigation {
-//   width: 100%;
-//   position: absolute;
-//   top: 2rem;
-//   left: -1rem;
-// }
 
 .navbar__toggle {
   display: flex;
@@ -140,6 +130,7 @@
   }
 
   .navbar__modal {
+    flex-direction: row;
     align-items: center;
     background-color: transparent;
     position: relative;
