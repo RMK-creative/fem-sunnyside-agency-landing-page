@@ -57,6 +57,10 @@
 }
 
 @media only screen and (min-width: 750px) {
+  .footer {
+    margin-top: 10rem;
+  }
+
   .footer__img-stack {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
