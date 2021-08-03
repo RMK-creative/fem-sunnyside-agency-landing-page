@@ -246,7 +246,7 @@ p,
     transition: 0.3s ease; }
   .header {
     background-image: url(/images/desktop/image-header.jpg);
-    padding-bottom: 15rem; }
+    padding-bottom: 21rem; }
   .header__heading {
     max-width: 100%;
     font-size: 3.5rem;
@@ -347,10 +347,9 @@ p,
   .cta__text-wrap {
     max-width: 26rem;
     text-align: left; }
-  .cta__photography-text-wrap {
-    max-width: 30rem; }
+  .cta__photography-text-wrap,
   .cta__graphic-text-wrap {
-    max-width: 40rem; }
+    max-width: 21rem; }
   .cta__copy {
     padding: 0; }
   .cta__stack {
