@@ -1,0 +1,156 @@
+.cta {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__header {
+  font-weight: 900;
+  color: var(--color-dark-desaturated-blue);
+  margin-top: 4rem;
+  padding: 0 3rem;
+}
+
+.cta__copy {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+
+  font-size: 1.125rem;
+  color: var(--color-very-dark-grayish-blue);
+}
+
+.cta__btn {
+  text-transform: uppercase;
+  font-family: var(--font-family-fraunces);
+  font-weight: 900;
+  font-size: 0.9375rem;
+  letter-spacing: 1.5px;
+
+  position: relative;
+}
+
+.cta__btn::after {
+  content: "";
+  height: 0.625rem;
+  width: 8.562rem;
+  border-radius: 1rem;
+  position: absolute;
+  transform: translate(-8.1rem, 0.8rem);
+  z-index: -1;
+
+  background-color: var(--color-yellow);
+  opacity: 0.4;
+}
+
+.cta__btn:hover::after {
+  opacity: 1;
+}
+
+#learn-more__stand-out::after {
+  background-color: var(--color-soft-red);
+  opacity: 0.4;
+}
+
+#learn-more__stand-out:hover::after {
+  opacity: 1;
+}
+
+.cta__stand-out {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.cta__photography,
+.cta__graphic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vw;
+
+  display: flex;
+  flex-direction: column;
+  place-content: flex-end;
+  align-items: center;
+}
+
+.cta__graphic {
+  margin-top: 4rem;
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+}
+
+.cta__photography {
+  margin-top: 0;
+  background-image: url(/images/mobile/image-photography.jpg);
+}
+
+.cta__photography p,
+.cta__graphic p {
+  font-size: 1rem;
+  color: var(--color-dark-desaturated-blue);
+}
+
+@media only screen and (min-width: 500px) {
+  .cta__photography,
+  .cta__graphic {
+    height: 120vw;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .cta__photography,
+  .cta__graphic {
+    height: 110vw;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .cta__header {
+    margin: 0;
+  }
+
+  .cta__photography-text-wrap {
+    max-width: 30rem;
+  }
+
+  .cta__graphic-text-wrap {
+    max-width: 40rem;
+  }
+
+  .cta__copy {
+    padding: 0 6rem;
+  }
+
+  .cta__stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cta--order1 {
+    order: 1;
+  }
+
+  #cta--order2 {
+    order: 2;
+  }
+
+  .cta__stand-out,
+  .cta__graphic {
+    margin: 0;
+  }
+
+  .cta__photography {
+    background-image: url(/images/desktop/image-photography.jpg);
+  }
+
+  .cta__graphic {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+  }
+
+  .cta__photography,
+  .cta__graphic {
+    height: 43vw;
+  }
+}

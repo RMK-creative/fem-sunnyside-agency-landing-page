@@ -1,19 +1,3 @@
-:root {
-  --color-soft-red: hsl(7, 99%, 70%);
-  --color-yellow: hsl(51, 100%, 49%);
-  --color-dark-design-cyan: rgb(37, 86, 75);
-  --color-lighter-cyan: hsl(168, 34%, 41%);
-  --color-footer-cyan: hsl(168, 44%, 70%);
-  --color-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --color-very-dark-grayish-blue: hsl(213, 9%, 39%);
-  --color-dark-grayish-blue: hsl(232, 10%, 55%);
-  --color-grayish-blue: hsl(210, 4%, 67%);
-  --color-bg-blue: hsl(196, 71%, 73%);
-  --color-hover-blue: rgba(168, 221, 240, 0.5);
-  --color-white: hsl(0, 0%, 100%);
-  --font-family-barlow: "Barlow", sans serif;
-  --font-family-fraunces: "Fraunces", serif; }
-
 *,
 *::before,
 *::after,
@@ -50,6 +34,26 @@ h3 {
 p,
 .footer__nav-item {
   font: var(--font-family-barlow); }
+
+.logo {
+  width: 7.7rem;
+  margin: 1rem; }
+
+:root {
+  --color-soft-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-dark-design-cyan: rgb(37, 86, 75);
+  --color-lighter-cyan: hsl(168, 34%, 41%);
+  --color-footer-cyan: hsl(168, 44%, 70%);
+  --color-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --color-dark-grayish-blue: hsl(232, 10%, 55%);
+  --color-grayish-blue: hsl(210, 4%, 67%);
+  --color-bg-blue: hsl(196, 71%, 73%);
+  --color-hover-blue: rgba(168, 221, 240, 0.5);
+  --color-white: hsl(0, 0%, 100%);
+  --font-family-barlow: "Barlow", sans serif;
+  --font-family-fraunces: "Fraunces", serif; }
 
 .navbar {
   display: flex;
@@ -190,13 +194,6 @@ p,
   top: 2.2rem;
   left: 1rem; }
 
-.logo {
-  width: 7.7rem;
-  margin: 1rem; }
-
-.hidden {
-  display: none; }
-
 .header__text-container {
   display: flex;
   flex-direction: column;
@@ -218,10 +215,6 @@ p,
   margin-top: 3rem;
   height: 7.5rem;
   width: 2.5rem; }
-
-@keyframes bounce {
-  to {
-    transform: translateY(0.5rem); } }
 
 .cta {
   text-align: center;
