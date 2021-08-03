@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/sunnyside-desktop.png)
+![](/images/sunnyside-desktop.png)
 
 ### Links
 
