@@ -23,18 +23,18 @@
   <body>
     <div class="content-wrapper">
       <header class="header">
-        <nav class="navbar">
+        <div class="navbar">
           <div class="navbar__logo">
-            <img
-              class="logo"
-              src="./images/logo.svg"
-              alt="Sunnyside agency logo"
-            />
+            <a href="#">
+              <img
+                class="logo"
+                src="./images/logo.svg"
+                alt="Sunnyside agency logo"
+              />
+            </a>
           </div>
-          <button class="navbar__toggle">
-            <span class="navbar__hamburger"></span>
-          </button>
-          <div class="navbar-links">
+
+          <nav class="navigation">
             <ul class="navbar__modal">
               <li class="navbar__item">
                 <a href="/" class="navbar__link">About</a>
@@ -49,8 +49,12 @@
                 <a href="/" class="navbar__link btn-nav btn-contact">Contact</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+
+          <a class="toggle-box">
+            <span class="navbar__hamburger"></span>
+          </a>
+        </div>
 
         <div class="header__text-container">
           <h1 class="header__heading">We are creatives</h1>
