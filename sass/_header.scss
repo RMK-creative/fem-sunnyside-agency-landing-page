@@ -199,57 +199,58 @@
 }
 
 @media only screen and (min-width: 650px) {
-    .navbar__modal {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: var(--color-white);
-      font-family: var(--font-family-barlow);
-    }
-  
-    .navbar__modal.active {
-      background-color: transparent;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateX(0);
-      width: 0;
-      padding: 0;
-    }
-  
-    .navbar__modal li {
-      margin: 0 1rem;
-    }
-  
-    .toggle-box {
-      display: none;
-    }
-  
-    .btn-contact {
-      background-color: var(--color-white);
-    }
-  
-    .btn-contact:hover {
-      background-color: var(--color-hover-blue);
-      color: var(--color-white);
-      transition: 0.3s ease;
-    }
-  
-    .header {
-      background-image: url(/images/desktop/image-header.jpg);
-      padding-bottom: 15rem;
-    }
-  
-    .header__heading {
-      max-width: 100%;
-      font-size: 3.5rem;
-      margin-top: 6.6rem;
-    }
-  
-    .header__arrow {
-      width: 2.5rem;
-    }
+  .navbar__modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-white);
+    font-family: var(--font-family-barlow);
+  }
+
+  .navbar__modal.active {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 0;
+    padding: 0;
+  }
+
+  .navbar__modal li {
+    margin: 0 1rem;
+  }
+
+  .toggle-box {
+    display: none;
+  }
+
+  .btn-contact {
+    background-color: var(--color-white);
+  }
+
+  .btn-contact:hover {
+    background-color: var(--color-hover-blue);
+    color: var(--color-white);
+    transition: 0.3s ease;
+  }
+
+  .header {
+    background-image: url(/images/desktop/image-header.jpg);
+    padding-bottom: 15rem;
+  }
+
+  .header__heading {
+    max-width: 100%;
+    font-size: 3.5rem;
+    margin-top: 6.6rem;
+  }
+
+  .header__arrow {
+    width: 2.5rem;
+  }
+}
