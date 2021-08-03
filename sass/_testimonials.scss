@@ -49,4 +49,6 @@
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
+}
